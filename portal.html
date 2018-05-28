@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>Koen &amp; Yvonne Wifi Hotspot</title>
+		<meta name="viewport" content="width=1.0" />
+		<style type="text/css">
+			body {
+			background-color: #fff;
+			}
+			body,td,th {
+				color: #000;
+				font-family: Verdana, Arial;
+				font-size: 9pt;
+			}
+			h1 {
+				font-size: 14pt;
+				margin-top: 0;
+				text-align: center;
+			}
+			h2 {
+				font-size: 10pt;
+				background-color: blue;
+				color: #fff;
+				padding: 5px;
+				margin: 0;
+			}
+			#LoginForm {
+				padding: 10px;
+				margin: 5px;
+				max-width: 500px;
+				margin-left: auto;
+				margin-right: auto;				
+			}
+			#LoginFormOptions .LoginFormField {
+				width: 100%;
+			}
+			#LoginFormOptions .LoginFormButton {
+				margin-top: 5px;
+			}
+			#LoginFormCredentials {
+				border: solid 1px blue;
+				margin-right: 10px;
+				margin-bottom: 10px;
+				width: 100%;
+			}
+			#LoginFormFree {
+				border: solid 1px blue;
+				width: 100%;
+			}
+			.LoginFormContents {
+				padding: 5px;
+				text-align: center;
+			}
+			
+			.LoginFormContents input {
+				height: 75px;
+				width: 100px;
+			}
+		</style>
+	</head>
+    <body>		
+		<div id="LoginForm">
+			<h1>Koen &amp; Yvonne Wifi Hotspot</h1>
+			<p>Welkom op het Koen &amp; Yvonne OpenWifi netwerk. Via dit WiFi netwerk kun je gratis gebruik maken van internet (alleen HTTP en HTTPS).</p>
+			<div id="LoginFormOptions">
+				<div id="LoginFormFree">
+					<form method="post" action="$PORTAL_ACTION$">
+						<input name="redirurl" type="hidden" value="$PORTAL_REDIRURL$">
+						<input name="zone" type="hidden" value="$PORTAL_ZONE$">
+						<h2>Disclaimer</h2>
+						<div class="LoginFormContents">					
+							<p>Bij misbruik via dit netwerk zal deze functionaliteit worden opgeheven. Gelieve je aan de richtlijnen correct internet gebruik te houden.</p>
+							<input name="accept" type="submit" value="Akkoord" class="LoginFormButton">
+						</div>
+					</form>
+				</div>					
+			</div>
+							
+		</div>
+	</body>
+</html>
