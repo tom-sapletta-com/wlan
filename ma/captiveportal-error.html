@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1.0"/>
+
+    <title>Buchbinder W-LAN</title>
+
+    <style type="text/css">
+        body {
+            background-color: white;
+        }
+
+        body, td, th {
+            color: #000;
+            font-family: Verdana, Arial;
+            font-size: 9pt;
+        }
+
+        h1 {
+            font-size: 13pt;
+            margin-bottom: 20px;
+            text-align: left;
+            color: #333333;
+
+        }
+
+        h2 {
+            font-size: 13pt;
+            /*background-color: #e30513;*/
+            /*color: #fff;*/
+            padding: 15px 5px 1px 0;
+            margin: 0;
+        }
+
+        #LoginForm {
+            border: solid 1px gray;
+            margin: 5px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #LoginForm .header {
+            background-color: gray;
+            height: 90px;
+        }
+
+        #LoginForm .logo {
+            margin-top: -70px;
+            height: 96px;
+            padding-left: 20px;
+
+        }
+
+        #LoginFormOptions .LoginFormField {
+            width: 100%;
+        }
+
+        #LoginFormOptions .LoginFormButton {
+            margin-top: 5px;
+            padding: 10px;
+
+        }
+
+        #LoginFormCredentials {
+            border: solid 1px #e30513;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        #LoginFormFree {
+            width: 100%;
+            padding-left: 10px;
+            padding-top: 20px;
+
+        }
+
+        .LoginFormContents {
+            padding: 5px;
+            text-align: center;
+        }
+
+        .LoginFormContents input {
+            height: 75px;
+            width: 100px;
+        }
+
+        .center {
+            text-align: center;
+        }
+        #accept{
+            margin: 0 40px 0 100px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div id="LoginForm">
+    <div class="header">
+    </div>
+
+    <img src="data:image/png;base64,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"
+         alt="Buchbinder" class="logo">
+
+    <div id="LoginFormOptions">
+        <div id="LoginFormFree">
+
+            <form method="post" action="#PORTAL_ACTION#"><input type='hidden' name='__csrf_magic'
+                                                                value="sid:cd67935e93402e81d44d367d4af110ab29572eac,1339311326"/>
+                <input name="redirurl" type="hidden" value="#PORTAL_REDIRURL#">
+
+                <div id="mainlevel" class="center">
+                    <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                        <tr>
+                            <td class="center">
+                                <div id="mainarea" class="center">
+                                    <table width="100%" border="0" cellpadding="5" cellspacing="5">
+                                        <tr>
+                                            <td>
+                                                <div id="maindivarea" class="center">
+                                                    <div id='statusbox'>
+                                                        <font color='red' face='arial' size='+1'>
+                                                            <b>
+                                                                #PORTAL_MESSAGE#
+                                                            </b>
+                                                        </font>
+                                                    </div>
+                                                    <br/>
+                                                    <div id='loginbox'>
+                                                        <table>
+                                                            <tr>
+                                                                <td colspan="2">
+                                                                    <h1>Herzlich
+                                                                        wilkommen im
+                                                                        Buchbinder
+                                                                        W-LAN</h1>
+
+                                                                    <h2>Login für
+                                                                        Mitarbeiter:</h2>
+                                                                    Mitarbeiter können
+                                                                    sich mit Ihren
+                                                                    BubiHR -
+                                                                    Zugangsdaten
+                                                                    einloggen
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="right">Username:</td>
+                                                                <td><input name="auth_user"
+                                                                           type="text"
+                                                                           style="border: 1px dashed;">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td align="right">Password:</td>
+                                                                <td><input name="auth_pass"
+                                                                           type="password"
+                                                                           style="border: 1px dashed;">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td colspan="2" >
+                                                                    <input id="accept"
+                                                                           name="accept"
+                                                                           type="submit"
+                                                                           value="Continue">
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+            </form>
+            <br>
+
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript">CsrfMagic.end();</script>
+</body>
+</html>
+

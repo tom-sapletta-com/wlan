@@ -1,0 +1,30 @@
+<HTML>
+<HEAD><TITLE>Redirecting...</TITLE><script type="text/javascript">if (top != self) {top.location.href = self.location.href;}</script><script type="text/javascript">var csrfMagicToken = "sid:8b49a033fd0034ae37a4307398eb87694cfbbb73,1339311354";var csrfMagicName = "__csrf_magic";</script><script src="/csrf/csrf-magic.js" type="text/javascript"></script></head>
+<BODY>
+<SPAN STYLE="font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 11px;">
+<B>Redirecting to <A HREF="<?=$my_redirurl;?>"><?=$my_redirurl;?></A>...</B>
+</SPAN>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+LogoutWin = window.open('', 'Logout', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=256,height=64');
+if (LogoutWin) {
+	LogoutWin.document.write('<HTML>');
+	LogoutWin.document.write('<HEAD><TITLE>Logout</TITLE><script type="text/javascript">if (top != self) {top.location.href = self.location.href;}</script><script type="text/javascript">var csrfMagicToken = "sid:8b49a033fd0034ae37a4307398eb87694cfbbb73,1339311354";var csrfMagicName = "__csrf_magic";</script><script src="/csrf/csrf-magic.js" type="text/javascript"></script></head>') ;
+	LogoutWin.document.write('<BODY BGCOLOR="#435370">');
+	LogoutWin.document.write('<DIV ALIGN="center" STYLE="color: #ffffff; font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 11px;">') ;
+	LogoutWin.document.write('<B>Click the button below to disconnect</B><P>');
+	LogoutWin.document.write('<FORM METHOD="POST" ACTION="<?=$logouturl;?><input type='hidden' name='__csrf_magic' value="sid:8b49a033fd0034ae37a4307398eb87694cfbbb73,1339311354" />">');
+	LogoutWin.document.write('<INPUT NAME="logout_id" TYPE="hidden" VALUE="<?=$sessionid;?>">');
+	LogoutWin.document.write('<INPUT NAME="logout" TYPE="submit" VALUE="Logout">');
+	LogoutWin.document.write('</FORM>');
+	LogoutWin.document.write('</DIV><script type="text/javascript">CsrfMagic.end();</script></body>');
+	LogoutWin.document.write('</HTML>');
+	LogoutWin.document.close();
+}
+
+document.location.href="<?=$my_redirurl;?>";
+-->
+</SCRIPT>
+<script type="text/javascript">CsrfMagic.end();</script></body>
+</HTML>
+
