@@ -5,7 +5,7 @@
 	Reward Gagarin <rewardgms@gmail.com>
 		
 	part of the pfSense project	(https://www.pfsense.org)
-	Copyright (C) 2010 Ermal Luçi
+	Copyright (C) 2010 Ermal Luï¿½i
 	Copyright (C) 2013-2015 Electric Sheep Fencing, LP
 	All rights reserved.
 
