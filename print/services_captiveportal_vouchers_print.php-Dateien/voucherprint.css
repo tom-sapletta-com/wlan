@@ -1,5 +1,5 @@
 body {
-	font-family: Arial, Helvetica, sans-serif;
+ font-family: Arial, Helvetica, sans-serif;
 }
 
 .page-break	{ page-break-before: always; }
@@ -35,8 +35,8 @@ body {
 	font-weight: bold;
 	text-align: center;
 	padding: 2px 0;
-	font-size: 13px;
-	text-transform: uppercase;
+    font-size: 13px;
+    text-transform: uppercase;
 }
 
 .voucher .logo {
@@ -51,18 +51,18 @@ body {
 
 .voucher .info {
 	position: absolute;
-	top: 19px;
-	left: 2px;
-	font-size: 11px;
+    top: 19px;
+    left: 2px;
+    font-size: 11px;
 	text-align: center;
 }
 
 .voucher .vcode {
 	position: absolute;
-	top: 73px;
-	left: 2px;
-	font-size: 22px;
-	font-weight: bold;
+    top: 73px;
+    left: 2px;
+    font-size: 22px;
+    font-weight: bold;
 	text-align: center;
 	width: 100%;
 	/*float: right;*/
@@ -71,19 +71,19 @@ body {
 
 .voucher .vtime{
 	position: absolute;
-	top: 101px;
-	left: 50px;
-	font-size: 13px;
+    top: 101px;
+    left: 50px;
+    font-size: 13px;
 }
 
 .voucher .vexpire{
 	position: absolute;
-	top: 116px;
-	left: 50px;
-	font-size: 13px;
+    top: 116px;
+    left: 50px;
+    font-size: 13px;
 	color: silver;
 }
 
 .voucher .vtime strong, .voucher .vtime b {
 	color: #333333 !important;
-}
+ }
